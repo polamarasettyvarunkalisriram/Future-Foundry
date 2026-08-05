@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="#0f1023"/>
+  <rect width="1600" height="1000" fill="url(#g)" opacity="0.20"/>
+  <g stroke="rgba(255,255,255,0.10)" stroke-width="2">
+    <path d="M60 340 Q 220 220 400 340 T 780 340 T 1160 340 T 1540 340" fill="none"/>
+    <path d="M60 500 Q 220 380 400 500 T 780 500 T 1160 500 T 1540 500" fill="none"/>
+    <path d="M60 660 Q 220 540 400 660 T 780 660 T 1160 660 T 1540 660" fill="none"/>
+  </g>
+  <circle cx="1180" cy="620" r="180" fill="url(#g)" opacity="0.85"/>
+  <path d="M1180 500 L1186 536 L1216 544 L1186 552 L1180 588 L1174 552 L1144 544 L1174 536 Z" fill="#ffffff"/>
+  <text x="140" y="300" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="34">Plan. Book. Go.</text>
+  <text x="140" y="370" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="64">AI-Travel-Planner</text>
+  <text x="140" y="435" fill="#a5b4fc" font-family="Segoe UI, Arial, sans-serif" font-size="30">Itineraries from a chat · Budget-aware · Live demo</text>
+</svg>

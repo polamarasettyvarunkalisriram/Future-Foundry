@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="#0f1023"/>
+  <rect width="1600" height="1000" fill="url(#g)" opacity="0.22"/>
+  <g stroke="rgba(255,255,255,0.10)" stroke-width="2">
+    <line x1="120" y1="250" x2="560" y2="250"/>
+    <line x1="120" y1="340" x2="480" y2="340"/>
+    <line x1="120" y1="430" x2="620" y2="430"/>
+    <line x1="120" y1="520" x2="520" y2="520"/>
+    <line x1="120" y1="610" x2="580" y2="610"/>
+  </g>
+  <text x="140" y="745" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="34">Role-Aware</text>
+  <text x="140" y="810" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="64">RAG Logistics Assistant</text>
+  <text x="140" y="870" fill="#a5b4fc" font-family="Segoe UI, Arial, sans-serif" font-size="30">LLM · Vector DB · Role-Based Access Control</text>
+</svg>

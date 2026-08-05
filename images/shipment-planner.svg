@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="#0f1023"/>
+  <rect width="1600" height="1000" fill="url(#g)" opacity="0.22"/>
+  <g stroke="rgba(255,255,255,0.10)" stroke-width="2">
+    <line x1="120" y1="260" x2="760" y2="260"/>
+    <line x1="120" y1="340" x2="620" y2="340"/>
+    <line x1="120" y1="420" x2="700" y2="420"/>
+    <line x1="120" y1="500" x2="640" y2="500"/>
+    <line x1="120" y1="580" x2="720" y2="580"/>
+  </g>
+  <circle cx="1180" cy="620" r="200" fill="none" stroke="rgba(165,180,252,0.5)" stroke-width="6"/>
+  <circle cx="1180" cy="620" r="130" fill="none" stroke="rgba(165,180,252,0.35)" stroke-width="5"/>
+  <circle cx="1180" cy="620" r="60" fill="url(#g)" opacity="0.8"/>
+  <text x="140" y="740" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="34">Multimodal</text>
+  <text x="140" y="805" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="64">3PL Shipment Planner</text>
+  <text x="140" y="865" fill="#a5b4fc" font-family="Segoe UI, Arial, sans-serif" font-size="30">Agentic AI · Multimodal · Route Optimization</text>
+</svg>

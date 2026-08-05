@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Future Foundry — Building Innovative Digital Solutions Together</title>
+  <meta name="description" content="Future Foundry is a passionate software development team creating web applications, mobile apps, AI solutions, cloud platforms, and enterprise software." />
+  <meta name="keywords" content="software development, web apps, mobile apps, AI, cloud, team portfolio" />
+  <meta property="og:title" content="Future Foundry — Digital Product Studio" />
+  <meta property="og:description" content="We design and build premium digital products — web, mobile, AI, and cloud." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='800' fill='white' text-anchor='middle'%3EFF%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('nexora-theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  <noscript><style>.preloader{display:none}.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+
+  <!-- SVG Sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-9 9M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.31-.02-3-1.83-3s-2.11 1.43-2.11 2.9V21H9z"/></symbol>
+    <symbol id="i-portfolio" viewBox="0 0 24 24"><path d="M8 6V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1M4 9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.9 6.26 6.6.72-4.9 4.57 1.3 6.55L12 16.77 6.1 20.1l1.3-6.55-4.9-4.57 6.6-.72z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13 4l-2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="2.5" stroke="currentColor" stroke-width="2" fill="none"/><path d="M4 5.5v13c0 1.4 3.6 2.5 8 2.5s8-1.1 8-2.5v-13M4 12c0 1.4 3.6 2.5 8 2.5s8-1.1 8-2.5" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 19a5 5 0 0 1-.6-9.96 7 7 0 0 1 13.6 1.4A4 4 0 0 1 17 19z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9.5 3a2.5 2.5 0 0 1 2.5 2.5v13a2.5 2.5 0 1 1-5 0V11H5.5a2.5 2.5 0 0 1 0-5H7V5.5A2.5 2.5 0 0 1 9.5 3zM14.5 21a2.5 2.5 0 0 1-2.5-2.5v-13a2.5 2.5 0 1 1 5 0V13h1.5a2.5 2.5 0 0 1 0 5H17v.5a2.5 2.5 0 0 1-2.5 2.5z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M12 2c4 1.5 6 5 6 9l-3 5-3 6-3-6-3-5c0-4 2-7.5 6-9z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><circle cx="12" cy="9" r="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M5 17c-1 1.5-1.5 4-1.5 4s2.5-.5 4-1.5M19 17c1 1.5 1.5 4 1.5 4s-2.5-.5-4-1.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="i-design" viewBox="0 0 24 24"><path d="M12 19l7-7a4.24 4.24 0 0 0-6-6l-7 7v6zM12 19v-5M9 7h6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 8.2-8 9-4.8-.8-8-4.5-8-9V6z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5M3 17l9 5 9-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2" fill="none"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2" fill="none"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2" fill="none"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5" stroke="currentColor" stroke-width="2" fill="none"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M17.5 14.2A6.5 6.5 0 0 1 21.5 20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H4v1a4 4 0 0 0 4 4M16 6h4v1a4 4 0 0 1-4 4M12 14v4M8 20h8M10 20a2 2 0 0 1 4 0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-git" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="18" cy="6" r="3" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="12" cy="18" r="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M6 9v4a3 3 0 0 0 3 3h3M18 9v1.5A3 3 0 0 1 15 13.5" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.3-9.3-8.5A4.8 4.8 0 0 1 12 6.6a4.8 4.8 0 0 1 9.3 4.9C19 15.7 12 20 12 20z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.5" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path fill="currentColor" d="M10 7c-3.3.6-5 2.6-5 6v4h6v-6H8c0-2 1.2-3.3 3-3.8zM19 7c-3.3.6-5 2.6-5 6v4h6v-6h-3c0-2 1.2-3.3 3-3.8z"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-twitter" viewBox="0 0 24 24"><path fill="currentColor" d="M18.9 2H22l-7.5 8.6L23 22h-6.9l-5.4-7.1L4.5 22H1.4l8-9.2L1 2h7.1l4.9 6.5zM17.7 20h1.9L7.3 3.9H5.3z"/></symbol>
+    <symbol id="i-figma" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12a4 4 0 1 1 8 0 4 4 0 0 1-8 0zM4 20a4 4 0 0 1 4-4h4v4a4 4 0 0 1-8 0zM12 4a4 4 0 0 1 4 4H8a4 4 0 0 1 4-4zM4 12a4 4 0 0 1 4-4h4v8H8a4 4 0 0 1-4-4zM4 4a4 4 0 0 1 4-4h4v8H8a4 4 0 0 1-4-4z"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
+    <symbol id="i-logo" viewBox="0 0 32 32"><rect width="32" height="32" rx="9" fill="url(#logoGrad)"/><path d="M9 10h8v3H12v3h4.5v3H12V22H9zM17.5 10h7.5v3h-5v3h4.5v3h-4.5V22h-2.5z" fill="#fff"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu-dots" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.6" fill="currentColor"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/><circle cx="19" cy="12" r="1.6" fill="currentColor"/></symbol>
+    <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+  </svg>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-logo">
+      <span class="preloader-spinner"></span>
+      <span class="preloader-text">FUTURE FOUNDRY</span>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="logo" aria-label="Future Foundry home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M9 10h8v3H12v3h4.5v3H12V22H9zM17.5 10h7.5v3h-5v3h4.5v3h-4.5V22h-2.5z" fill="#fff"/></svg>
+        </span>
+        <span class="logo-text">Future Foundry<span class="logo-dot">.</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#team" class="nav-link">Our Team</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#technologies" class="nav-link">Technologies</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li class="nav-more">
+          <a href="#" class="nav-link" aria-haspopup="true">More
+            <svg class="caret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <ul class="dropdown">
+            <li><a href="#process" class="nav-link">Process</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+          <svg class="icon-sun"><use href="#i-sun"/></svg>
+          <svg class="icon-moon"><use href="#i-moon"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-gradient btn-sm nav-cta">Hire Us
+          <svg class="btn-arrow"><use href="#i-arrow"/></svg>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+          <svg class="icon-open"><use href="#i-menu"/></svg>
+          <svg class="icon-close"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="m-link">Home</a></li>
+      <li><a href="#about" class="m-link">About Us</a></li>
+      <li><a href="#team" class="m-link">Our Team</a></li>
+      <li><a href="#services" class="m-link">Services</a></li>
+      <li><a href="#projects" class="m-link">Projects</a></li>
+      <li><a href="#technologies" class="m-link">Technologies</a></li>
+      <li><a href="#process" class="m-link">Process</a></li>
+      <li><a href="#achievements" class="m-link">Achievements</a></li>
+      <li><a href="#testimonials" class="m-link">Testimonials</a></li>
+      <li><a href="#faq" class="m-link">FAQ</a></li>
+      <li><a href="#contact" class="m-link">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="#contact" class="btn btn-gradient">Hire Us</a>
+      <div class="social-row">
+        <a href="#" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg><use href="#i-twitter"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="hero-grid"></div>
+        <div class="floating-shape shape-1">
+          <svg viewBox="0 0 24 24"><use href="#i-code"/></svg>
+        </div>
+        <div class="floating-shape shape-2">
+          <svg viewBox="0 0 24 24"><use href="#i-cloud"/></svg>
+        </div>
+        <div class="floating-shape shape-3">
+          <svg viewBox="0 0 24 24"><use href="#i-brain"/></svg>
+        </div>
+        <div class="floating-shape shape-4">
+          <svg viewBox="0 0 24 24"><use href="#i-rocket"/></svg>
+        </div>
+        <div class="floating-shape shape-5">
+          <svg viewBox="0 0 24 24"><use href="#i-bolt"/></svg>
+        </div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          Software Development Team
+        </div>
+        <h1 class="hero-title reveal">
+          Building Innovative <span class="gradient-text">Digital Solutions</span> Together
+        </h1>
+        <p class="hero-sub reveal">
+          Future Foundry is a passionate software development team crafting web applications, mobile apps,
+          AI solutions, cloud platforms, and enterprise software that power modern businesses.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-gradient btn-lg">View Projects
+            <svg class="btn-arrow"><use href="#i-arrow"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost btn-lg">Contact Us</a>
+        </div>
+
+        <div class="hero-metrics reveal">
+          <div class="metric">
+            <strong><span class="counter" data-target="4">0</span>+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric">
+            <strong><span class="counter" data-target="35">0</span>+</strong>
+            <span>Projects Delivered</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric">
+            <strong><span class="counter" data-target="4">0</span></strong>
+            <span>Core Members</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero-scroll" aria-label="Scroll to about">
+        <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">About Us</span>
+          <h2>Who we are &amp; what drives us</h2>
+          <p>We are a tight-knit team of engineers, designers, and problem solvers who believe great software
+             comes from collaboration, curiosity, and craft.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div class="about-card card">
+              <div class="about-card-top">
+                <span class="status-dot"></span>
+                <span class="status-text">build in progress</span>
+              </div>
+              <div class="code-window">
+                <div class="code-bar"><span></span><span></span><span></span><i>team.ts</i></div>
+                <pre><code><span class="tok-k">const</span> team = <span class="tok-f">new</span> <span class="tok-c">Future Foundry</span>();
+<span class="tok-k">team</span>.<span class="tok-p">add</span>({</code></pre>
+              </div>
+              <div class="about-card-stats">
+                <div class="astat"><strong>4+</strong><span>Years Experience</span></div>
+                <div class="astat"><strong>35+</strong><span>Projects</span></div>
+                <div class="astat"><strong>4</strong><span>Core Members</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-copy">
+            <div class="mvv reveal">
+              <div class="mvv-icon"><svg><use href="#i-rocket"/></svg></div>
+              <div>
+                <h3>Our Mission</h3>
+                <p>To empower businesses of every size with intelligent, reliable, and delightful digital
+                   products that solve real problems and stand the test of time.</p>
+              </div>
+            </div>
+            <div class="mvv reveal">
+              <div class="mvv-icon violet"><svg><use href="#i-eye"/></svg></div>
+              <div>
+                <h3>Our Vision</h3>
+                <p>To be the most trusted product studio our clients partner with — known for quality,
+                   transparency, and technology that feels effortless.</p>
+              </div>
+            </div>
+            <div class="mvv reveal">
+              <div class="mvv-icon cyan"><svg><use href="#i-heart"/></svg></div>
+              <div>
+                <h3>Our Values</h3>
+                <p>Ownership, empathy, craftsmanship, and continuous learning. We celebrate wins together
+                   and grow stronger with every challenge.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid reveal">
+          <div class="stat-card card">
+            <span class="stat-icon"><svg><use href="#i-clock"/></svg></span>
+            <strong><span class="counter" data-target="4">0</span>+</strong>
+            <span class="stat-label">Years of Experience</span>
+          </div>
+          <div class="stat-card card">
+            <span class="stat-icon violet"><svg><use href="#i-grid"/></svg></span>
+            <strong><span class="counter" data-target="35">0</span>+</strong>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card card">
+            <span class="stat-icon cyan"><svg><use href="#i-users"/></svg></span>
+            <strong><span class="counter" data-target="4">0</span></strong>
+            <span class="stat-label">Core Members</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="section team" id="team">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our Team</span>
+          <h2>Meet the minds behind the magic</h2>
+          <p>Designers, engineers, and strategists working as one to turn ambitious ideas into shipped products. Together we bring 4+ years of hands-on experience and 35+ shipped projects.</p>
+        </div>
+
+        <div class="team-grid" id="teamGrid">
+          <article class="team-card card reveal">
+            <div class="team-photo av-1">
+              <div class="team-photo-inner">
+                <img src="images/shanmukh-pilla.webp" alt="Shanmukh Pilla" loading="lazy" />
+                <div class="team-social">
+                  <a href="#" aria-label="Shanmukh Pilla LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+                  <a href="#" aria-label="Shanmukh Pilla GitHub"><svg><use href="#i-github"/></svg></a>
+                  <a href="https://shanmukh-pilla.notion.site/shanmukh-pilla" target="_blank" rel="noopener" aria-label="Shanmukh Pilla portfolio"><svg><use href="#i-portfolio"/></svg></a>
+                </div>
+              </div>
+              <span class="badge-lead">Designer</span>
+            </div>
+            <div class="team-info">
+              <h3>Shanmukh Pilla</h3>
+              <span class="team-role">UI/UX Designer</span>
+              <p>Crafts clean, accessible, delightful interfaces — turning complex ideas into intuitive product experiences.</p>
+              <div class="team-tags"><span>Figma</span><span>Design Systems</span><span>UX Research</span></div>
+              <span class="team-exp"><svg><use href="#i-clock"/></svg>4+ Years Experience</span>
+            </div>
+          </article>
+
+          <article class="team-card card reveal">
+            <div class="team-photo av-2">
+              <div class="team-photo-inner">
+                <img src="images/sriram-pvk.jpg" alt="Sriram PVK" loading="lazy" />
+                <div class="team-social">
+                  <a href="https://www.linkedin.com/in/polamarasetty-varun-kali-sriram-6a07ab1aa/" target="_blank" rel="noopener" aria-label="Sriram PVK LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+                  <a href="https://github.com/polamarasettyvarunkalisriram" target="_blank" rel="noopener" aria-label="Sriram PVK GitHub"><svg><use href="#i-github"/></svg></a>
+                  <a href="#" aria-label="Sriram PVK portfolio"><svg><use href="#i-portfolio"/></svg></a>
+                </div>
+              </div>
+              <span class="badge-lead">Backend</span>
+            </div>
+            <div class="team-info">
+              <h3>Sriram PVK</h3>
+              <span class="team-role">Senior Software Developer</span>
+              <p>Builds reliable backend services, APIs, and integrations that scale quietly behind the scenes.</p>
+              <div class="team-tags"><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+              <span class="team-exp"><svg><use href="#i-clock"/></svg>2.1 Years Experience</span>
+            </div>
+          </article>
+
+          <article class="team-card card reveal">
+            <div class="team-photo av-3">
+              <div class="team-photo-inner">
+                <img src="images/sai-rohit.jpg" alt="Rohit Sai" loading="lazy" />
+                <div class="team-social">
+                  <a href="https://www.linkedin.com/in/majji-rohith-sai-974b271ab" target="_blank" rel="noopener" aria-label="Rohit Sai LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+                  <a href="https://github.com/ROHITsai-24" target="_blank" rel="noopener" aria-label="Rohit Sai GitHub"><svg><use href="#i-github"/></svg></a>
+                  <a href="#" aria-label="Rohit Sai portfolio"><svg><use href="#i-portfolio"/></svg></a>
+                </div>
+              </div>
+              <span class="badge-lead">Full-Stack</span>
+            </div>
+            <div class="team-info">
+              <h3>Rohit Sai</h3>
+              <span class="team-role">Senior Software Developer</span>
+              <p>Ships polished full-stack features end-to-end with modern React and TypeScript workflows.</p>
+              <div class="team-tags"><span>React</span><span>Next.js</span><span>TypeScript</span></div>
+              <span class="team-exp"><svg><use href="#i-clock"/></svg>2.6 Years Experience</span>
+            </div>
+          </article>
+
+          <article class="team-card card reveal">
+            <div class="team-photo av-4">
+              <div class="team-photo-inner">
+                <img src="images/varun-pilla.jpg" alt="Varun Pilla" loading="lazy" />
+                <div class="team-social">
+                  <a href="#" aria-label="Varun Pilla LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+                  <a href="#" aria-label="Varun Pilla GitHub"><svg><use href="#i-github"/></svg></a>
+                  <a href="#" aria-label="Varun Pilla portfolio"><svg><use href="#i-portfolio"/></svg></a>
+                </div>
+              </div>
+              <span class="badge-lead">DevOps</span>
+            </div>
+            <div class="team-info">
+              <h3>Varun Pilla</h3>
+              <span class="team-role">Senior Software Developer</span>
+              <p>Keeps products fast and dependable — deployments, cloud infrastructure, and performance tuning.</p>
+              <div class="team-tags"><span>AWS</span><span>Docker</span><span>CI/CD</span></div>
+              <span class="team-exp"><svg><use href="#i-clock"/></svg>2 Years Experience</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Services</span>
+          <h2>What we build for you</h2>
+          <p>End-to-end digital services — from the first sketch to global-scale deployment and beyond.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card card reveal">
+            <span class="service-icon"><svg><use href="#i-code"/></svg></span>
+            <h3>Web Development</h3>
+            <p>Blazing-fast, responsive web apps and sites engineered with modern frameworks.</p>
+            <a href="#contact" class="service-link">Learn more <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="service-card card reveal">
+            <span class="service-icon violet"><svg><use href="#i-grid"/></svg></span>
+            <h3>Mobile App Development</h3>
+            <p>Native and cross-platform mobile experiences your users will love.</p>
+            <a href="#contact" class="service-link">Learn more <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="service-card card reveal">
+            <span class="service-icon cyan"><svg><use href="#i-design"/></svg></span>
+            <h3>UI/UX Design</h3>
+            <p>Intuitive, accessible interfaces backed by research and rapid prototyping.</p>
+            <a href="#contact" class="service-link">Learn more <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="service-card card reveal">
+            <span class="service-icon pink"><svg><use href="#i-brain"/></svg></span>
+            <h3>AI Solutions</h3>
+            <p>LLM-powered assistants, computer vision, and predictive models that create advantage.</p>
+            <a href="#contact" class="service-link">Learn more <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="service-card card reveal">
+            <span class="service-icon violet"><svg><use href="#i-cloud"/></svg></span>
+            <h3>Cloud Solutions</h3>
+            <p>Secure, cost-optimized cloud architecture on AWS, Azure, and Google Cloud.</p>
+            <a href="#contact" class="service-link">Learn more <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="service-card card reveal">
+            <span class="service-icon cyan"><svg><use href="#i-database"/></svg></span>
+            <h3>API Development</h3>
+            <p>Well-documented, versioned REST and GraphQL APIs your teams will thank you for.</p>
+            <a href="#contact" class="service-link">Learn more <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="service-card card reveal">
+            <span class="service-icon pink"><svg><use href="#i-layers"/></svg></span>
+            <h3>Database Design</h3>
+            <p>Schema modeling, indexing, and performance tuning for any data volume.</p>
+            <a href="#contact" class="service-link">Learn more <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="service-card card reveal">
+            <span class="service-icon violet"><svg><use href="#i-shield"/></svg></span>
+            <h3>DevOps</h3>
+            <p>CI/CD pipelines, monitoring, and infrastructure that deploys on autopilot.</p>
+            <a href="#contact" class="service-link">Learn more <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="service-card card reveal">
+            <span class="service-icon cyan"><svg><use href="#i-shield"/></svg></span>
+            <h3>Maintenance &amp; Support</h3>
+            <p>Ongoing monitoring, updates, and 24/7 support to keep products healthy.</p>
+            <a href="#contact" class="service-link">Learn more <svg><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Featured Projects</span>
+          <h2>Work we're proud of</h2>
+          <p>A selection of products we designed, built, and shipped for startups and enterprises alike.</p>
+        </div>
+
+        <div class="filter-bar reveal" role="tablist" aria-label="Project categories">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ai">AI Projects</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="design">UI/UX Design</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card card reveal" data-category="ai">
+            <a href="#" class="project-thumb pj-1" data-project="ai-travel-planner" aria-label="View AI-Travel-Planner details">
+              <img src="images/ai-travel-planner.svg" alt="AI-Travel-Planner itinerary dashboard" loading="lazy" />
+              <span class="project-status live">Live</span>
+              <span class="project-zoom"><svg><use href="#i-external"/></svg></span>
+            </a>
+            <div class="project-body">
+              <div class="project-meta"><span>AI Projects</span><span class="dot">•</span><span>2026</span></div>
+              <h3>AI-Travel-Planner</h3>
+              <p>AI travel assistant that turns budget, dates, and interests into a complete day-by-day plan.</p>
+              <div class="project-tags"><span>Next.js</span><span>OpenAI</span><span>PostgreSQL</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost btn-xs" data-project="ai-travel-planner">Details</a>
+                <a href="https://github.com/polamarasettyvarunkalisriram" target="_blank" rel="noopener" class="btn-icon" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+                <a href="https://ai-travel-planner-ten-tan.vercel.app/login" target="_blank" rel="noopener" class="btn-icon" aria-label="Live demo"><svg><use href="#i-external"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal" data-category="ai">
+            <a href="#" class="project-thumb pj-1" data-project="rag-assistant" aria-label="View Role-Aware Logistics Chat Assistant details">
+              <img src="images/rag-assistant.svg" alt="Role-Aware Logistics Chat Assistant" loading="lazy" />
+              <span class="project-status live">Live</span>
+              <span class="project-zoom"><svg><use href="#i-external"/></svg></span>
+            </a>
+            <div class="project-body">
+              <div class="project-meta"><span>AI Projects</span><span class="dot">•</span><span>2025</span></div>
+              <h3>Role-Aware Logistics Chat Assistant</h3>
+              <p>AI chat assistant with role-aware RAG, giving logistics staff accurate, permission-scoped answers.</p>
+              <div class="project-tags"><span>RAG</span><span>LLM</span><span>FastAPI</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost btn-xs" data-project="rag-assistant">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal" data-category="ai">
+            <a href="#" class="project-thumb pj-1" data-project="shipment-planner" aria-label="View Multimodal 3PL Shipment Planner details">
+              <img src="images/shipment-planner.svg" alt="Multimodal 3PL Shipment Planner" loading="lazy" />
+              <span class="project-status live">Live</span>
+              <span class="project-zoom"><svg><use href="#i-external"/></svg></span>
+            </a>
+            <div class="project-body">
+              <div class="project-meta"><span>AI Projects</span><span class="dot">•</span><span>2025</span></div>
+              <h3>Multimodal 3PL Shipment Planner</h3>
+              <p>Agentic AI assistant that plans and manages complex 3PL shipments through natural language.</p>
+              <div class="project-tags"><span>Agentic AI</span><span>LLMs</span><span>RAG</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost btn-xs" data-project="shipment-planner">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal" data-category="ai">
+            <a href="#" class="project-thumb pj-1" data-project="ai-resume-screener" aria-label="View AI Resume Screener details">
+              <img src="images/ai-resume-screener.svg" alt="AI Resume Screener" loading="lazy" />
+              <span class="project-status in-progress">In Progress</span>
+              <span class="project-zoom"><svg><use href="#i-external"/></svg></span>
+            </a>
+            <div class="project-body">
+              <div class="project-meta"><span>AI Projects</span><span class="dot">•</span><span>2026</span></div>
+              <h3>AI Resume Screener</h3>
+              <p>Upload a resume and get AI-powered ATS-style feedback, strengths, and skill gaps.</p>
+              <div class="project-tags"><span>Next.js</span><span>Supabase</span><span>AI</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost btn-xs" data-project="ai-resume-screener">Details</a>
+                <a href="https://github.com/polamarasettyvarunkalisriram/ai-resume-screener" target="_blank" rel="noopener" class="btn-icon" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal" data-category="ai">
+            <a href="#" class="project-thumb pj-1" data-project="disaster-management" aria-label="View AI Disaster Management System details">
+              <img src="images/disaster-management.svg" alt="AI Disaster Management System" loading="lazy" />
+              <span class="project-status in-progress">In Progress</span>
+              <span class="project-zoom"><svg><use href="#i-external"/></svg></span>
+            </a>
+            <div class="project-body">
+              <div class="project-meta"><span>AI Projects</span><span class="dot">•</span><span>2026</span></div>
+              <h3>AI Disaster Management System</h3>
+              <p>AI platform for disaster preparedness, response, and recovery with real-time alerts and dashboards.</p>
+              <div class="project-tags"><span>Next.js</span><span>RAG</span><span>Maps API</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost btn-xs" data-project="disaster-management">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal" data-category="web">
+            <a href="#" class="project-thumb pj-2" data-project="expense-tracker" aria-label="View Expense-tracker details">
+              <img src="images/expense-tracker.jpg" alt="Expense-tracker dashboard" loading="lazy" />
+              <span class="project-status live">Live</span>
+              <span class="project-zoom"><svg><use href="#i-external"/></svg></span>
+            </a>
+            <div class="project-body">
+              <div class="project-meta"><span>Web Apps</span><span class="dot">•</span><span>2026</span></div>
+              <h3>Expense-tracker</h3>
+              <p>Full-stack expense tracker for managing income and expenses with live balance updates and categorization.</p>
+              <div class="project-tags"><span>React</span><span>Node.js</span><span>MySQL</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost btn-xs" data-project="expense-tracker">Details</a>
+                <a href="https://github.com/polamarasettyvarunkalisriram/Expense-tracker" target="_blank" rel="noopener" class="btn-icon" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+                <a href="https://expense-tracker-ecru-five-ru65gjt19j.vercel.app/" target="_blank" rel="noopener" class="btn-icon" aria-label="Live demo"><svg><use href="#i-external"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal" data-category="web">
+            <a href="#" class="project-thumb pj-8" data-project="taskwave" aria-label="View TaskWave details">
+              <img src="images/taskwave.jpg" alt="TaskWave task management dashboard" loading="lazy" />
+              <span class="project-status live">Live</span>
+              <span class="project-zoom"><svg><use href="#i-external"/></svg></span>
+            </a>
+            <div class="project-body">
+              <div class="project-meta"><span>Web Apps</span><span class="dot">•</span><span>2026</span></div>
+              <h3>TaskWave</h3>
+              <p>Full-stack task management app for creating, tracking, and completing tasks with auth and status tracking.</p>
+              <div class="project-tags"><span>React</span><span>Node.js</span><span>MySQL</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost btn-xs" data-project="taskwave">Details</a>
+                <a href="https://github.com/polamarasettyvarunkalisriram/TaskWave-Task-Management-Application" target="_blank" rel="noopener" class="btn-icon" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+                <a href="https://task-wave-task-management-applicati.vercel.app/" target="_blank" rel="noopener" class="btn-icon" aria-label="Live demo"><svg><use href="#i-external"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal" data-category="web">
+            <a href="#" class="project-thumb pj-6" data-project="social-media" aria-label="View Social Media Web App details">
+              <img src="images/social-media.jpg" alt="Social Media Web App interface" loading="lazy" />
+              <span class="project-status live">Live</span>
+              <span class="project-zoom"><svg><use href="#i-external"/></svg></span>
+            </a>
+            <div class="project-body">
+              <div class="project-meta"><span>Web Apps</span><span class="dot">•</span><span>2025</span></div>
+              <h3>Social Media Web App</h3>
+              <p>Full-stack social platform with posts, likes, comments, image uploads, and real-time engagement.</p>
+              <div class="project-tags"><span>Next.js</span><span>Supabase</span><span>PostgreSQL</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost btn-xs" data-project="social-media">Details</a>
+                <a href="https://ganesh-utsav-portal.vercel.app" target="_blank" rel="noopener" class="btn-icon" aria-label="Live demo"><svg><use href="#i-external"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal" data-category="design">
+            <a href="#" class="project-thumb pj-3" data-project="louder" aria-label="View Louder details">
+              <img src="images/louder.png" alt="Louder civic participation concept" loading="lazy" />
+              <span class="project-status live">Live</span>
+              <span class="project-zoom"><svg><use href="#i-external"/></svg></span>
+            </a>
+            <div class="project-body">
+              <div class="project-meta"><span>UI/UX Design</span><span class="dot">•</span><span>2025</span></div>
+              <h3>Louder</h3>
+              <p>Research-driven civic participation concept that turns community feedback into simple, visual interactions.</p>
+              <div class="project-tags"><span>Figma</span><span>User Research</span><span>HCI</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost btn-xs" data-project="louder">Details</a>
+                <a href="https://github.com/shanmukh-pilla" target="_blank" rel="noopener" class="btn-icon" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+                <a href="https://shanmukh-pilla.notion.site/Louder-Designing-Civic-Participation-37e9d165ed95805da531fa60a80897a7" target="_blank" rel="noopener" class="btn-icon" aria-label="Case study"><svg><use href="#i-external"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal" data-category="design">
+            <a href="#" class="project-thumb pj-4" data-project="recipe-ui" aria-label="View Recipe-Following Interfaces details">
+              <img src="images/recipe-ui.webp" alt="Recipe-following interface study" loading="lazy" />
+              <span class="project-status live">Live</span>
+              <span class="project-zoom"><svg><use href="#i-external"/></svg></span>
+            </a>
+            <div class="project-body">
+              <div class="project-meta"><span>UI/UX Design</span><span class="dot">•</span><span>2025</span></div>
+              <h3>Recipe-Following Interfaces</h3>
+              <p>A cognitive-load study and redesign of cooking interfaces so cooks can glance, act, and stay in flow.</p>
+              <div class="project-tags"><span>Figma</span><span>UX Research</span><span>HCI</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost btn-xs" data-project="recipe-ui">Details</a>
+                <a href="https://github.com/shanmukh-pilla" target="_blank" rel="noopener" class="btn-icon" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+                <a href="https://shanmukh-pilla.notion.site/Recipe-Following-Interfaces-37e9d165ed9580c7b401fd6113056c0f" target="_blank" rel="noopener" class="btn-icon" aria-label="Case study"><svg><use href="#i-external"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal" data-category="design">
+            <a href="#" class="project-thumb pj-5" data-project="nepal-transport" aria-label="View Sustainable Electric Transport for Nepal details">
+              <img src="images/nepal-transport.webp" alt="Sustainable electric transport for Nepal" loading="lazy" />
+              <span class="project-status live">Live</span>
+              <span class="project-zoom"><svg><use href="#i-external"/></svg></span>
+            </a>
+            <div class="project-body">
+              <div class="project-meta"><span>UI/UX Design</span><span class="dot">•</span><span>2025</span></div>
+              <h3>Sustainable Electric Transport for Nepal</h3>
+              <p>Mobile and dashboard design for electric transport — trip planning, charging, and fleet operations.</p>
+              <div class="project-tags"><span>Product Design</span><span>Mobile App</span><span>Dashboard</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost btn-xs" data-project="nepal-transport">Details</a>
+                <a href="https://github.com/shanmukh-pilla" target="_blank" rel="noopener" class="btn-icon" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+                <a href="https://shanmukh-pilla.notion.site/Sustainable-Electric-Transport-for-Nepal-3329d165ed9580b583c6eeb5fa96af2f" target="_blank" rel="noopener" class="btn-icon" aria-label="Case study"><svg><use href="#i-external"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal" data-category="design">
+            <a href="#" class="project-thumb pj-6" data-project="vista" aria-label="View Vista details">
+              <img src="images/vista.webp" alt="Vista smart home control ecosystem" loading="lazy" />
+              <span class="project-status live">Live</span>
+              <span class="project-zoom"><svg><use href="#i-external"/></svg></span>
+            </a>
+            <div class="project-body">
+              <div class="project-meta"><span>UI/UX Design</span><span class="dot">•</span><span>2025</span></div>
+              <h3>Vista: Smart Home Control Ecosystem</h3>
+              <p>Calm, intuitive control surfaces for managing connected devices across phone, tablet, and voice.</p>
+              <div class="project-tags"><span>Product Design</span><span>UX Design</span><span>Interaction</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost btn-xs" data-project="vista">Details</a>
+                <a href="https://github.com/shanmukh-pilla" target="_blank" rel="noopener" class="btn-icon" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+                <a href="https://shanmukh-pilla.notion.site/Vista-Smart-Home-Control-Ecosystem-3329d165ed95806bace0d302ecbead8c" target="_blank" rel="noopener" class="btn-icon" aria-label="Case study"><svg><use href="#i-external"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our Process</span>
+          <h2>From idea to impact in six steps</h2>
+          <p>A transparent, battle-tested workflow that keeps you in the loop at every milestone.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-line" aria-hidden="true"></div>
+          <div class="timeline-item reveal">
+            <div class="tl-node"><svg><use href="#i-search"/></svg></div>
+            <div class="tl-card card">
+              <span class="tl-step">01</span>
+              <h3>Requirement Analysis</h3>
+              <p>We dig deep into your goals, users, and constraints to define a clear scope.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="tl-node"><svg><use href="#i-design"/></svg></div>
+            <div class="tl-card card">
+              <span class="tl-step">02</span>
+              <h3>UI/UX Design</h3>
+              <p>Wireframes, prototypes, and polished visual design validated with real users.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="tl-node"><svg><use href="#i-code"/></svg></div>
+            <div class="tl-card card">
+              <span class="tl-step">03</span>
+              <h3>Development</h3>
+              <p>Agile sprints, weekly demos, and clean, tested code — shipped incrementally.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="tl-node"><svg><use href="#i-shield"/></svg></div>
+            <div class="tl-card card">
+              <span class="tl-step">04</span>
+              <h3>Testing</h3>
+              <p>Automated and manual QA across devices, browsers, and edge cases.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="tl-node"><svg><use href="#i-rocket"/></svg></div>
+            <div class="tl-card card">
+              <span class="tl-step">05</span>
+              <h3>Deployment</h3>
+              <p>Zero-downtime releases with monitoring, backups, and rollback plans.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="tl-node"><svg><use href="#i-heart"/></svg></div>
+            <div class="tl-card card">
+              <span class="tl-step">06</span>
+              <h3>Maintenance</h3>
+              <p>Continuous improvements, updates, and support as your product evolves.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECHNOLOGIES ============ -->
+    <section class="section technologies" id="technologies">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Technologies</span>
+          <h2>Our favorite tools</h2>
+          <p>Over 30 battle-tested technologies we use daily to ship reliable, modern products.</p>
+        </div>
+
+        <div class="tech-tabs reveal" role="tablist" aria-label="Technology categories">
+          <button class="tech-tab active" data-cat="frontend">Frontend</button>
+          <button class="tech-tab" data-cat="backend">Backend</button>
+          <button class="tech-tab" data-cat="database">Databases</button>
+          <button class="tech-tab" data-cat="cloud">Cloud</button>
+          <button class="tech-tab" data-cat="ai">AI</button>
+          <button class="tech-tab" data-cat="devops">DevOps</button>
+        </div>
+
+        <div class="tech-panel active" id="cat-frontend">
+          <div class="tech-grid">
+            <div class="tech-card card t-react"><span class="t-logo">⚛</span><h3>React</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-next"><span class="t-logo">▲</span><h3>Next.js</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-angular"><span class="t-logo">A</span><h3>Angular</h3><span class="t-level">Advanced</span></div>
+            <div class="tech-card card t-html"><span class="t-logo">H5</span><h3>HTML</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-css"><span class="t-logo">#</span><h3>CSS</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-js"><span class="t-logo">JS</span><h3>JavaScript</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-ts"><span class="t-logo">TS</span><h3>TypeScript</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-tailwind"><span class="t-logo">≈</span><h3>Tailwind CSS</h3><span class="t-level">Expert</span></div>
+          </div>
+        </div>
+        <div class="tech-panel" id="cat-backend">
+          <div class="tech-grid">
+            <div class="tech-card card t-node"><span class="t-logo">⬢</span><h3>Node.js</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-express"><span class="t-logo">E</span><h3>Express</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-nest"><span class="t-logo">N</span><h3>NestJS</h3><span class="t-level">Advanced</span></div>
+            <div class="tech-card card t-python"><span class="t-logo">PY</span><h3>Python</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-java"><span class="t-logo">J</span><h3>Java</h3><span class="t-level">Advanced</span></div>
+            <div class="tech-card card t-php"><span class="t-logo">PHP</span><h3>PHP</h3><span class="t-level">Advanced</span></div>
+            <div class="tech-card card t-laravel"><span class="t-logo">L</span><h3>Laravel</h3><span class="t-level">Advanced</span></div>
+          </div>
+        </div>
+        <div class="tech-panel" id="cat-database">
+          <div class="tech-grid">
+            <div class="tech-card card t-mongo"><span class="t-logo">🍃</span><h3>MongoDB</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-postgres"><span class="t-logo">🐘</span><h3>PostgreSQL</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-mysql"><span class="t-logo">DB</span><h3>MySQL</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-supabase"><span class="t-logo">S</span><h3>Supabase</h3><span class="t-level">Advanced</span></div>
+            <div class="tech-card card t-firebase"><span class="t-logo">F</span><h3>Firebase</h3><span class="t-level">Expert</span></div>
+          </div>
+        </div>
+        <div class="tech-panel" id="cat-cloud">
+          <div class="tech-grid">
+            <div class="tech-card card t-aws"><span class="t-logo">aws</span><h3>AWS</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-azure"><span class="t-logo">AZ</span><h3>Azure</h3><span class="t-level">Advanced</span></div>
+            <div class="tech-card card t-gcp"><span class="t-logo">GCP</span><h3>Google Cloud</h3><span class="t-level">Advanced</span></div>
+            <div class="tech-card card t-docker"><span class="t-logo">🐳</span><h3>Docker</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-k8s"><span class="t-logo">k8s</span><h3>Kubernetes</h3><span class="t-level">Advanced</span></div>
+          </div>
+        </div>
+        <div class="tech-panel" id="cat-ai">
+          <div class="tech-grid">
+            <div class="tech-card card t-openai"><span class="t-logo">◆</span><h3>OpenAI</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-gemini"><span class="t-logo">✦</span><h3>Gemini</h3><span class="t-level">Advanced</span></div>
+            <div class="tech-card card t-tf"><span class="t-logo">TF</span><h3>TensorFlow</h3><span class="t-level">Advanced</span></div>
+            <div class="tech-card card t-pytorch"><span class="t-logo">PT</span><h3>PyTorch</h3><span class="t-level">Advanced</span></div>
+            <div class="tech-card card t-ml"><span class="t-logo">ML</span><h3>Machine Learning</h3><span class="t-level">Expert</span></div>
+          </div>
+        </div>
+        <div class="tech-panel" id="cat-devops">
+          <div class="tech-grid">
+            <div class="tech-card card t-git"><span class="t-logo">git</span><h3>Git</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-github"><span class="t-logo">GH</span><h3>GitHub</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-cicd"><span class="t-logo">CI</span><h3>CI/CD</h3><span class="t-level">Expert</span></div>
+            <div class="tech-card card t-linux"><span class="t-logo">🐧</span><h3>Linux</h3><span class="t-level">Expert</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section achievements" id="achievements">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Achievements</span>
+          <h2>Numbers we're proud of</h2>
+          <p>Milestones earned through thousands of hours of focused, collaborative work.</p>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="achieve-card card reveal"><span class="a-icon"><svg><use href="#i-grid"/></svg></span><strong><span class="counter" data-target="35">0</span>+</strong><span>Projects Completed</span></div>
+          <div class="achieve-card card reveal"><span class="a-icon violet"><svg><use href="#i-trophy"/></svg></span><strong><span class="counter" data-target="15">0</span></strong><span>Hackathons Won</span></div>
+          <div class="achieve-card card reveal"><span class="a-icon cyan"><svg><use href="#i-shield"/></svg></span><strong><span class="counter" data-target="40">0</span>+</strong><span>Certificates Earned</span></div>
+          <div class="achieve-card card reveal"><span class="a-icon pink"><svg><use href="#i-trophy"/></svg></span><strong><span class="counter" data-target="8">0</span></strong><span>Industry Awards</span></div>
+          <div class="achieve-card card reveal"><span class="a-icon violet"><svg><use href="#i-git"/></svg></span><strong><span class="counter" data-target="350">0</span>+</strong><span>Open Source Contributions</span></div>
+          <div class="achieve-card card reveal"><span class="a-icon cyan"><svg><use href="#i-heart"/></svg></span><strong><span class="counter" data-target="85">0</span>+</strong><span>Happy Clients</span></div>
+          <div class="achieve-card card reveal"><span class="a-icon pink"><svg><use href="#i-code"/></svg></span><strong><span class="counter" data-target="24">0</span>k+</strong><span>Code Commits</span></div>
+          <div class="achieve-card card reveal"><span class="a-icon violet"><svg><use href="#i-github"/></svg></span><strong><span class="counter" data-target="1200">0</span>+</strong><span>GitHub Stars</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Testimonials</span>
+          <h2>What our clients say</h2>
+          <p>Real feedback from the founders and teams we've partnered with.</p>
+        </div>
+
+        <div class="carousel reveal" id="carousel" aria-roledescription="carousel" aria-label="Client testimonials">
+          <div class="carousel-viewport">
+            <div class="carousel-track" id="carouselTrack">
+              <figure class="t-card card">
+                <span class="t-quote"><svg><use href="#i-quote"/></svg></span>
+                <div class="t-stars" aria-label="5 out of 5 stars">
+                  <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+                </div>
+                <blockquote>"Future Foundry took our rough idea and shipped a polished product in six weeks. The communication and code quality were better than agencies twice their size."</blockquote>
+                <figcaption>
+                  <img src="https://i.pravatar.cc/100?img=3" alt="Michael Chen" loading="lazy" />
+                  <div><strong>Michael Chen</strong><span>CEO, Brightline Analytics</span></div>
+                </figcaption>
+              </figure>
+              <figure class="t-card card">
+                <span class="t-quote"><svg><use href="#i-quote"/></svg></span>
+                <div class="t-stars" aria-label="5 out of 5 stars">
+                  <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+                </div>
+                <blockquote>"Their AI engineers built a recommendation engine that lifted our conversion rate by 34%. We genuinely consider them an extension of our own team."</blockquote>
+                <figcaption>
+                  <img src="https://i.pravatar.cc/100?img=49" alt="Sarah Kim" loading="lazy" />
+                  <div><strong>Sarah Kim</strong><span>Founder, Verda Commerce</span></div>
+                </figcaption>
+              </figure>
+              <figure class="t-card card">
+                <span class="t-quote"><svg><use href="#i-quote"/></svg></span>
+                <div class="t-stars" aria-label="5 out of 5 stars">
+                  <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+                </div>
+                <blockquote>"The redesign of our platform doubled user engagement within a month. Sneha's design taste and the dev team's execution are second to none."</blockquote>
+                <figcaption>
+                  <img src="https://i.pravatar.cc/100?img=31" alt="Elena Rodriguez" loading="lazy" />
+                  <div><strong>Elena Rodriguez</strong><span>Product Director, Studio Nord</span></div>
+                </figcaption>
+              </figure>
+              <figure class="t-card card">
+                <span class="t-quote"><svg><use href="#i-quote"/></svg></span>
+                <div class="t-stars" aria-label="5 out of 5 stars">
+                  <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+                </div>
+                <blockquote>"They saved our launch. Their team stabilized our infrastructure and cut cloud costs by 40% while improving performance."</blockquote>
+                <figcaption>
+                  <img src="https://i.pravatar.cc/100?img=68" alt="David Okafor" loading="lazy" />
+                  <div><strong>David Okafor</strong><span>CTO, PayRoute Africa</span></div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="carousel-nav">
+            <button class="car-btn" id="carPrev" aria-label="Previous testimonial"><svg><use href="#i-arrow"/></svg></button>
+            <div class="car-dots" id="carDots" role="tablist" aria-label="Testimonial slides"></div>
+            <button class="car-btn flip" id="carNext" aria-label="Next testimonial"><svg><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="container faq-container">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently asked questions</h2>
+          <p>Everything you might want to know before working with us.</p>
+        </div>
+
+        <div class="faq-list" id="faqList">
+          <div class="faq-item card reveal">
+            <button class="faq-q" aria-expanded="false">
+              <span>Who are you?</span>
+              <span class="faq-icon"><svg><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-a">
+              <p>Future Foundry is a close-knit software development team of 4 specialists covering engineering, design, AI, and cloud. We build web apps, mobile apps, AI solutions, and cloud platforms for startups and enterprises worldwide.</p>
+            </div>
+          </div>
+          <div class="faq-item card reveal">
+            <button class="faq-q" aria-expanded="false">
+              <span>What technologies do you use?</span>
+              <span class="faq-icon"><svg><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-a">
+              <p>We're framework-agnostic but heavy on modern stacks: React, Next.js, Node.js, Python, and Laravel on the code side, with MongoDB, PostgreSQL, and Firebase for data, and AWS, GCP, and Azure in the cloud. See our Technologies section for the full list.</p>
+            </div>
+          </div>
+          <div class="faq-item card reveal">
+            <button class="faq-q" aria-expanded="false">
+              <span>How long does development take?</span>
+              <span class="faq-icon"><svg><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-a">
+              <p>A landing page typically ships in 2–3 weeks, a full web app in 6–12 weeks, and larger enterprise platforms in 3–6 months. After a discovery call we'll give you a precise timeline and milestone plan — no surprises.</p>
+            </div>
+          </div>
+          <div class="faq-item card reveal">
+            <button class="faq-q" aria-expanded="false">
+              <span>Can we hire your team?</span>
+              <span class="faq-icon"><svg><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-a">
+              <p>Absolutely. We offer dedicated teams, fixed-scope projects, and time-and-material engagements. You can scale up or down as needs change, and you own the code and IP from day one.</p>
+            </div>
+          </div>
+          <div class="faq-item card reveal">
+            <button class="faq-q" aria-expanded="false">
+              <span>Do you provide maintenance?</span>
+              <span class="faq-icon"><svg><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-a">
+              <p>Yes. Every product we ship includes 30 days of free support, and our care plans cover monitoring, updates, security patches, and priority fixes with 24/7 coverage.</p>
+            </div>
+          </div>
+          <div class="faq-item card reveal">
+            <button class="faq-q" aria-expanded="false">
+              <span>How much does a project cost?</span>
+              <span class="faq-icon"><svg><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-a">
+              <p>Costs vary by scope and complexity. We work with you to define an MVP first so you can start small and iterate. Request a quote through the contact form and we'll respond within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Let's build something together</h2>
+          <p>Tell us about your project — we'll reply within 24 hours with next steps.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="info-card card">
+              <span class="info-icon"><svg><use href="#i-mail"/></svg></span>
+              <div><h3>Email</h3><a href="mailto:srirampolamarasetty@gmail.com">srirampolamarasetty@gmail.com</a></div>
+            </div>
+            <div class="info-card card">
+              <span class="info-icon violet"><svg><use href="#i-phone"/></svg></span>
+              <div><h3>Phone</h3><a href="tel:+917981618472">79816 18472</a></div>
+            </div>
+            <div class="info-card card">
+              <span class="info-icon cyan"><svg><use href="#i-pin"/></svg></span>
+              <div><h3>Location</h3><span>3-4, Yellavanipalem, Gopalapatnam, Visakhapatnam 530027</span></div>
+            </div>
+
+            <div class="map-card card" aria-label="Office location map placeholder">
+              <div class="map-overlay"></div>
+              <span class="map-pin"><svg><use href="#i-pin"/></svg></span>
+              <span class="map-label">Future Foundry — Visakhapatnam</span>
+              <div class="map-gridlines" aria-hidden="true"></div>
+            </div>
+
+            <div class="social-row contact-social">
+              <a href="#" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+              <a href="#" aria-label="Twitter"><svg><use href="#i-twitter"/></svg></a>
+              <a href="#" aria-label="Figma"><svg><use href="#i-figma"/></svg></a>
+            </div>
+          </div>
+
+          <form class="contact-form card reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="Jane Doe" required />
+                <span class="field-err">Please enter your name</span>
+              </div>
+              <div class="field">
+                <label for="cf-email">Email</label>
+                <input type="email" id="cf-email" name="email" placeholder="jane@company.com" required />
+                <span class="field-err">Please enter a valid email</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="cf-phone">Phone</label>
+                <input type="tel" id="cf-phone" name="phone" placeholder="79816 18472" />
+              </div>
+              <div class="field">
+                <label for="cf-company">Company</label>
+                <input type="text" id="cf-company" name="company" placeholder="Acme Inc." />
+              </div>
+            </div>
+            <div class="field">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" name="subject" placeholder="How can we help?" required />
+              <span class="field-err">Please add a subject</span>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Tell us about your project, timeline, and goals..." required></textarea>
+              <span class="field-err">Please write a short message</span>
+            </div>
+            <button type="submit" class="btn btn-gradient btn-lg btn-block">Send Message
+              <svg class="btn-arrow"><use href="#i-send"/></svg>
+            </button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none"><use href="#i-logo"/></svg>
+            </span>
+            <span class="logo-text">Future Foundry<span class="logo-dot">.</span></span>
+          </a>
+          <p>Premium digital products, engineered with care. Building innovative digital solutions together since 2018.</p>
+          <div class="social-row">
+            <a href="#" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg><use href="#i-twitter"/></svg></a>
+            <a href="#" aria-label="Figma"><svg><use href="#i-figma"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Mobile Apps</a></li>
+            <li><a href="#services">AI Solutions</a></li>
+            <li><a href="#services">Cloud Solutions</a></li>
+            <li><a href="#services">DevOps</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="#projects">AI-Travel-Planner</a></li>
+            <li><a href="#projects">View all →</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Monthly insights on product, design, and engineering. No spam, ever.</p>
+          <form id="newsForm" novalidate>
+            <input type="email" placeholder="you@email.com" aria-label="Email address" required />
+            <button class="btn btn-gradient btn-sm" type="submit" aria-label="Subscribe">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Future Foundry. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span class="dot">•</span>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div class="modal-overlay" id="projectModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close project details"><svg><use href="#i-close"/></svg></button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg><use href="#i-arrow"/></svg></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
