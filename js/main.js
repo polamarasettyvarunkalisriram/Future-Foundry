@@ -113,24 +113,45 @@
     counters.forEach((c) => (c.textContent = parseFloat(c.dataset.target).toLocaleString()));
   }
 
-  /* ---------- Project filtering ---------- */
+  /* ---------- Project filtering + view more ---------- */
   const filterBtns = $$(".filter-btn");
   const projectCards = $$(".project-card");
+  const moreWrap = $("#projectsMore");
+  const moreBtn = $("#projectsMoreBtn");
+  let projectsExpanded = false;
+
+  function applyProjects(f) {
+    projectCards.forEach((card, i) => {
+      const match = f === "all" || card.dataset.category === f;
+      const overLimit = !projectsExpanded && f === "all" && i >= 6;
+      card.classList.toggle("hide", !match);
+      card.classList.toggle("extra-hidden", overLimit);
+      if (match && !overLimit) {
+        card.classList.remove("anim-in");
+        void card.offsetWidth;
+        card.classList.add("anim-in");
+      }
+    });
+    moreWrap?.classList.toggle("is-hidden", f !== "all");
+    if (moreBtn) moreBtn.setAttribute("aria-expanded", String(projectsExpanded));
+  }
+  applyProjects("all");
+
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       filterBtns.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
-      const f = btn.dataset.filter;
-      projectCards.forEach((card) => {
-        const show = f === "all" || card.dataset.category === f;
-        card.classList.toggle("hide", !show);
-        if (show) {
-          card.classList.remove("anim-in");
-          void card.offsetWidth;
-          card.classList.add("anim-in");
-        }
-      });
+      applyProjects(btn.dataset.filter);
     });
+  });
+
+  moreBtn?.addEventListener("click", () => {
+    projectsExpanded = !projectsExpanded;
+    moreBtn.classList.toggle("open", projectsExpanded);
+    moreBtn.innerHTML = projectsExpanded
+      ? 'Show Less <svg class="btn-arrow"><use href="#i-arrow"/></svg>'
+      : 'View More Projects <svg class="btn-arrow"><use href="#i-arrow"/></svg>';
+    applyProjects($(".filter-btn.active")?.dataset.filter || "all");
   });
 
   /* ---------- Tech tabs ---------- */

@@ -592,6 +592,11 @@ input, textarea { font-family: inherit; }
 .case-cta-btn { margin-top: 8px; font-family: var(--font-body); }
 
 .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.project-card.extra-hidden { display: none; }
+.projects-more { display: flex; justify-content: center; margin-top: 46px; }
+.projects-more.is-hidden { display: none; }
+.projects-more .btn-arrow { transition: transform 0.25s ease; }
+.projects-more.open .btn-arrow { transform: rotate(90deg); }
 .project-card { overflow: hidden; display: flex; flex-direction: column; }
 .project-card:hover { transform: translateY(-8px); border-color: rgba(99, 102, 241, 0.45); box-shadow: var(--shadow-glow); }
 .project-card.hide { display: none; }
