@@ -692,7 +692,6 @@
     const timeline = p.timeline
       .map((t) => `<div class="md-tl-item"><strong>${t.phase}</strong><span>${t.period} · ${t.desc}</span></div>`)
       .join("");
-    const members = p.members.map((m) => `<span class="md-member">${m}</span>`).join("");
     const shots = p.screenshots
       .map((s, i) => {
         const hues = ["#6366f1", "#a855f7", "#22d3ee", "#ec4899"];
@@ -751,10 +750,6 @@
           <div class="md-timeline">${timeline}</div>
         </div>
         <div>
-          <div class="md-section">
-            <h4>${svgIcon("i-users")}Team Members</h4>
-            <div class="md-members">${members}</div>
-          </div>
           <div class="md-section">
             <h4>${svgIcon("i-heart")}Lessons Learned</h4>
             <div class="md-mini">
